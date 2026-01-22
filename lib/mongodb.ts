@@ -8,7 +8,7 @@ type MongooseCache = {
 
 // Extend the global object to include our mongoose cache
 declare global {
-  // eslint-disable-next-line no-var
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   var mongoose: MongooseCache | undefined;
 }
 
